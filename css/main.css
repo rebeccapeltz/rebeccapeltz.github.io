@@ -1,3 +1,9 @@
 .header-with-sticky {
-    margin-top:30px;
+    margin-top:20px;
+}
+
+/* override bootstrap */
+.navbar {
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
