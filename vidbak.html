@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- https://videos.pexels.com/videos/blurred-video-of-people-walking-at-the-market-2886 -->
+  <!-- https://codepen.io/FelixRilling/pen/qzfoc -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Full - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/full.css" rel="stylesheet">
+
+  <style>
+    video {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: 100vh;
+      min-height: 100%;
+      object-fit: fill;
+      background: url("assets/images/clouds.jpeg") no repeat center center fixed;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+    }
+
+    .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .overlay-desc {
+      background: rgba(0, 0, 0, 0);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;    /* default axis horizontal */
+      align-items: center;  /*opposite axis vertical */
+      justify-content: center;
+      color: white;
+    }
+
+    .overlay-desc h1 {
+      width: 100%;
+      background: 212529;
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /* Set the fixed height of the footer here */
+      height: 100px;
+      line-height: 20px;
+      /* Vertically center the text there */
+      background-color: #212529;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <video autoplay loop poster="assets/images/clouds.jpeg">
+      <source src="assets/video/people.mp4" type="video/mp4">
+    </video>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="overlay-desc">
+      <h1>The Market</h1>
+    </div>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="text-muted">The market.</div>
+        <div class="text-muted"><a href="https://videos.pexels.com/videos/blurred-video-of-people-walking-at-the-market-2886">Free video courtesy of pexels.com</a></div>
+      <div class="text-muted"><a href="http://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/">Sticky footer</a></div>
+      </div>
+    </footer>
+  </div>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
