@@ -1,3 +1,6 @@
 .card-body {
   padding: 0 !important;
 }
+.card img {
+  border: solid 3px darkgray;
+}
