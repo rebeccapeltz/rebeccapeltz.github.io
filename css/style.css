@@ -10,3 +10,6 @@
 .turn-off {
   color: lime !important;
 }
+.pointable {
+  cursor: pointer;
+}
