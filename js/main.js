@@ -1,4 +1,3 @@
-
 let runHighlighter = true
 let highlighter = undefined
 let counter = 0
