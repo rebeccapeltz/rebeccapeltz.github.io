@@ -13,3 +13,6 @@
 .pointable {
   cursor: pointer;
 }
+.location {
+  font-size: 1.2rem;
+}
