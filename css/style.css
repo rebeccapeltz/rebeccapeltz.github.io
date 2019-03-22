@@ -4,3 +4,9 @@
 .card img {
   border: solid 3px lightgray;
 }
+.turn-on {
+  color: red !important;
+}
+.turn-off {
+  color: lime !important;
+}
