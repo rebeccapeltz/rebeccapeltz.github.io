@@ -45,12 +45,12 @@ var lastData = createRandomDataSet(1, POWER_LAST_MAX);
 
 var dataset = firstData.concat(lastData);
 //Width and height
-var w = 600;
-var h = 350;
+var w = 1200;
+var h = 600;
 
-var RADIUS = 40,
+var RADIUS =80,
   BASE_NUMBER = 6,
-  Y = 60;
+  Y = 100;
 var xScale = d3.scale.ordinal()
   .domain(d3.range(dataset.length))
   .rangeRoundBands([0, w], 0.05);
@@ -103,7 +103,7 @@ var drawIt = function(svg, dataset, w, h) {
         return "black";
       }
     })
-    .attr("font-size", "24px")
+    .attr("font-size", "36px")
     .attr("class", "nums");
 
   return svg;
@@ -154,7 +154,7 @@ d3.select("#d3click")
           return "black";
         }
       })
-      .attr("font-size", "24px")
+      .attr("font-size", "36px")
       .attr("class", "nums")
       .transition()
       .duration(3000)
