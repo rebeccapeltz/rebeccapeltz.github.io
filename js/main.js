@@ -1,55 +1,149 @@
-let runHighlighter = true
-let highlighter = undefined
-let counter = 0
-function highlightSkills() {
-  let devIcons = document.querySelectorAll(".dev-icons .list-inline-item i")
-  return setInterval(function(){
-    if (counter === devIcons.length) {
-      counter = 0
-    }
-    if (counter === 0){
-      last = devIcons.length - 1
-    } else {
-      last = counter - 1
-    }
+;(function () {
+	
+	'use strict';
 
-    devIcons[last].style.color = "#868e96" // gray
-    devIcons[counter].style.color = "#176A73"
-    counter = counter + 1
-  },1000)
-}
-//toggle classes
-function switchClass(el, class1, class2, class1a, class2a){
-  if (el.classList.contains(class1)){
-    el.classList.remove(class1)
-    el.classList.remove(class1a)
-    el.classList.add(class2)
-    el.classList.add(class2a)
-  } else {
-    el.classList.remove(class2)
-    el.classList.remove(class2a)
-    el.classList.add(class1)
-    el.classList.add(class1a)
-  }
+	var isMobile = {
+		Android: function() {
+			return navigator.userAgent.match(/Android/i);
+		},
+			BlackBerry: function() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+			iOS: function() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+			Opera: function() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+			Windows: function() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+			any: function() {
+			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+		}
+	};
 
-}
-document.addEventListener("DOMContentLoaded",event =>{
-  highlighter = highlightSkills()
-  let switchHighlighter = document.querySelector(".switch-highlighter")
- 
-  switchHighlighter.style.cursor = "hand"
-  switchHighlighter.addEventListener('click',event=>{
-    console.log("highlighter switch clicked")
-    // turn on intervals/turn off intervals
-    if (switchHighlighter.classList.contains("turn-on")){
-      clearInterval(highlighter)
-    } else {
-      highlighter = highlightSkills()
-    }
-    switchClass(switchHighlighter,"turn-on","turn-off", "fa-toggle-on", "fa-toggle-off")
-    
-    // if (switchHighlighter.style.color === "red") switchHighlighter.style.color = "lime" // toggle 
-    // else switchHighlighter.style.color = "red"
-  })
-  
-})
+	
+	var fullHeight = function() {
+
+		if ( !isMobile.any() ) {
+			$('.js-fullheight').css('height', $(window).height());
+			$(window).resize(function(){
+				$('.js-fullheight').css('height', $(window).height());
+			});
+		}
+	};
+
+	// Parallax
+	var parallax = function() {
+		$(window).stellar();
+	};
+
+	var contentWayPoint = function() {
+		var i = 0;
+		$('.animate-box').waypoint( function( direction ) {
+
+			if( direction === 'down' && !$(this.element).hasClass('animated-fast') ) {
+				
+				i++;
+
+				$(this.element).addClass('item-animate');
+				setTimeout(function(){
+
+					$('body .animate-box.item-animate').each(function(k){
+						var el = $(this);
+						setTimeout( function () {
+							var effect = el.data('animate-effect');
+							if ( effect === 'fadeIn') {
+								el.addClass('fadeIn animated-fast');
+							} else if ( effect === 'fadeInLeft') {
+								el.addClass('fadeInLeft animated-fast');
+							} else if ( effect === 'fadeInRight') {
+								el.addClass('fadeInRight animated-fast');
+							} else {
+								el.addClass('fadeInUp animated-fast');
+							}
+
+							el.removeClass('item-animate');
+						},  k * 100, 'easeInOutExpo' );
+					});
+					
+				}, 50);
+				
+			}
+
+		} , { offset: '85%' } );
+	};
+
+
+
+	var goToTop = function() {
+
+		$('.js-gotop').on('click', function(event){
+			
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $('html').offset().top
+			}, 500, 'easeInOutExpo');
+			
+			return false;
+		});
+
+		$(window).scroll(function(){
+
+			var $win = $(window);
+			if ($win.scrollTop() > 200) {
+				$('.js-top').addClass('active');
+			} else {
+				$('.js-top').removeClass('active');
+			}
+
+		});
+	
+	};
+
+	var pieChart = function() {
+		$('.chart').easyPieChart({
+			scaleColor: false,
+			lineWidth: 4,
+			lineCap: 'butt',
+			barColor: '#FF9000',
+			trackColor:	"#f5f5f5",
+			size: 160,
+			animate: 1000
+		});
+	};
+
+	var skillsWayPoint = function() {
+		if ($('#fh5co-skills').length > 0 ) {
+			$('#fh5co-skills').waypoint( function( direction ) {
+										
+				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+					setTimeout( pieChart , 400);					
+					$(this.element).addClass('animated');
+				}
+			} , { offset: '90%' } );
+		}
+
+	};
+
+
+	// Loading page
+	var loaderPage = function() {
+		$(".fh5co-loader").fadeOut("slow");
+	};
+
+	
+	$(function(){
+		contentWayPoint();
+		goToTop();
+		loaderPage();
+		fullHeight();
+		parallax();
+		// pieChart();
+		skillsWayPoint();
+	});
+
+
+}());
