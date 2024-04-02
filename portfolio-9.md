@@ -6,7 +6,7 @@
 
 [Code](https://github.com/rebeccapeltz/esri-vite-react)
  
-[Table](https://www.beckypeltz.me/esri-vite-react/) 
+[Application](https://www.beckypeltz.me/esri-vite-react/) 
 
 ## Description
 AcrGIS Maps can be served using the [ESRI JavaScript API](https://developers.arcgis.com/javascript/latest/). 
