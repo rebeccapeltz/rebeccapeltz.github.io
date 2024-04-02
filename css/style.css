@@ -1292,8 +1292,13 @@ input[type="text"] {
   opacity: 0;
 }
 
-.project {
-  
+.special-link{
+  color: #A45EE5; 
+}
+.special-link:hover {
+  background-color: plum;
+  color: black;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
 
