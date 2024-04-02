@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #135063e6;
+  background: #C70039e6;
 }
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
@@ -203,8 +203,8 @@ h1, h2, h3, h4, h5, h6, figure {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   margin: 0 auto;
   margin-bottom: 30px;
   -webkit-border-radius: 50%;
@@ -1292,6 +1292,9 @@ input[type="text"] {
   opacity: 0;
 }
 
+.project {
+  
+}
 /*# sourceMappingURL=style.css.map */
 
 
