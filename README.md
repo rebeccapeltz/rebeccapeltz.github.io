@@ -1,4 +1,4 @@
-# Introduciton
+# Introduction
 
 A summary of work and interests.
 
