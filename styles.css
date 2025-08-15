@@ -302,8 +302,8 @@ ul {
   padding-top: 0.5rem;
 }
 header.home h1 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
 .section h2 {
   margin: 0;
@@ -318,7 +318,7 @@ dd {
   margin-top: 0;
 }
 header + .section {
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 .lists .subsection-content ul,
 .subsection h3,
@@ -335,8 +335,8 @@ header.home h1 {
   margin-bottom: 2rem;
 }
 .section {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 h2,
 h3,
@@ -426,7 +426,7 @@ p {
     max-width: 48rem;
   }
   main {
-    padding: 4rem;
+    padding: 2rem;
   }
   .subsection .subsection-content {
     padding-left: 0;
@@ -435,8 +435,8 @@ p {
     padding-top: 1rem;
   }
   header.home h1 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
   }
   .text .subsection-content p:last-child {
     margin-bottom: 0;
