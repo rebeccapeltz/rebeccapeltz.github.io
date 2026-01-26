@@ -1,316 +1,348 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Becky Peltz: Developer Educator</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Beck Peltz is a software developer and educator">
+    <title>Becky Peltz - Software Developer, Educator, Curriculum Designer</title>
     <meta property="og:type" content="website">
     <meta property="og:title" content="Becky Peltz: Developer Educator">
     <meta property="og:description"
         content="Becky Peltz is a fullstack software developer and educator with  decades of experience.">
     <meta property="og:image" content="/images/becky_intro.png">
     <meta property="og:image:alt" content="Software developer and Educator.">
-    <!-- <link rel="canonical" href="https://beckypeltz.online/"> -->
     <link rel="icon" type="image/png" href="./images/b-letter-icon.png">
-    <link rel="stylesheet" href="./styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            background-color: white;
+            padding: 50px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            font-weight: 300;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #34495e;
+            font-size: 1.3em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .about-card {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .about-card h3 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .skill-category {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .skill-category h3 {
+            margin-top: 0;
+            font-size: 1.1em;
+            color: #2980b9;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+        }
+
+        .links {
+            margin-top: 15px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #95a5a6;
+            font-size: 0.9em;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <main>
-        <header class="home">
-            <h1><span class="name">Becky Peltz </span>
-                Software Developer, Educator, and 
-                Curriculum Designer
-            </h1>
+    <div class="container">
+        <header>
+            <h1>Becky Peltz</h1>
+            <p class="tagline">Software Developer, Educator, and Curriculum Designer</p>
         </header>
-        <section class="section text">
+
+        <section id="about">
             <h2>About</h2>
-            <div class="section-content">
-                <section class="subsection">
+            <div class="about-section">
+                <div class="about-card">
                     <h3>Developer</h3>
-                    <div class="subsection-content">
-                        <p>Problem solving as and art and a science. Attention to detail. Seek feedback from humans and
-                            machines. Communicate with different audiences. Understand user needs. Ask questions. Break
-                            down complexities. Collaborate with the team. Be ready to change everything. Strive for
-                            quality!</p>
-                    </div>
-                </section>
-                <section class="subsection">
+                    <p>Problem solving as an art and a science with attention to detail. Seeking feedback from humans
+                        and machines while communicating with different audiences.</p>
+                    <p>Understanding user needs, asking questions, breaking down complexities, and collaborating with
+                        teams. Ready to change everything while striving for quality!</p>
+                </div>
+
+                <div class="about-card">
                     <h3>Educator</h3>
-                    <div class="subsection-content">
-                        <p> Understand the learning process and human memory. Break complex concepts and patterns into
-                            simpler one. Create hands on activities that lead learners into their own experiments.
-                            Incorporate multimedia. Teach problem solving and not memorization. Find ways to create
-                            conversation. Give and get feedback. Adapt to changing modes for creating connection. </p>
-                    </div>
-                </section>
-                
-                  <section class="subsection">
+                    <p>Understanding the learning process and human memory by breaking complex concepts into simpler
+                        ones. Creating hands-on activities that lead learners into their own experiments.</p>
+                    <p>Incorporating multimedia, teaching problem solving over memorization, and creating conversation.
+                        Giving and getting feedback while adapting to changing modes for connection.</p>
+                </div>
+
+                <div class="about-card">
                     <h3>Curriculum Designer</h3>
-                    <div class="subsection-content">
-                        <p>Create technical content for students and customers. Design learning paths that
-                            incorporate multiple modes of learning. Write clear instructions and explanations.
-                            Develop hands on activities that lead to deeper understanding. Use feedback to improve
-                            content over time.
-                        </p>
-                    </div>
-                </section>
-                <section class="subsection">
-                    <h3>Background</h3>
-                    <div class="subsection-content">
-                        <p>Decades of software development starting with database design and administration and
-                            leading into web development and the cloud. Working for large companies, startups and
-                            educational institutions. <abbr>BA with Phi Beta Kappa</abbr>,<abbr>MBA</abbr>,<abbr>MS
-                                Curriculum Design</abbr>.
-                        </p>
-                    </div>
-                </section>
+                    <p>Creating technical content for students and customers with learning paths that incorporate
+                        multiple modes of learning. Writing clear instructions and explanations.</p>
+                    <p>Developing hands-on activities that lead to deeper understanding and using feedback to improve
+                        content over time.</p>
+                </div>
             </div>
         </section>
-        <section class="section text">
+
+        <section id="background">
+            <h2>Background</h2>
+            <p>Decades of software development starting with database design and administration, leading into web
+                development and the cloud. Working experience spans large companies, startups, and educational
+                institutions.</p>
+        </section>
+
+        <section id="education">
             <h2>Education</h2>
-            <div class="section-content">
-                <h3>Summary</h3>
-                <li>BA, MBA, Phi Beta Kappa University of Washington, Seattle, WA</li>
-                <li>MS, Curriculum Design, Quinnipiac University, Hamden, CT </li>
-            </div>
+            <ul>
+                <li><strong>BA, MBA, Phi Beta Kappa</strong> - University of Washington, Seattle, WA</li>
+                <li><strong>MS, Curriculum Design</strong> - Quinnipiac University, Hamden, CT</li>
+            </ul>
         </section>
-        <section class="section text">
+
+        <section id="work-history">
             <h2>Work History</h2>
-            <div class="section-content">
-                <h3>Summary of Writing and Teaching Experience</h3>
-                <li>University of Washington Continuum Python Instruction</li>
-                <li>Wenatchee Valley College Prompt Engineering</li>
-                <li>Cloudinary Technical Curriculum Development</li>
-                <li>Microsoft Teals Volunteer</li>
-                <li>Seattle University Web Develoment Certificate Instruction</li>
-                <li>Codefellows Bootcamp Instruction</li>
-                <li>City University of Seattle Web Development Instruction</li>
-                <li>North Seattle College Programming Instruction</li>
 
-                <h3>Summary of Software Development Experience</h3>
+            <h3>Writing and Teaching Experience</h3>
+            <ul>
+                <li>University of Washington Continuum - Python Instruction</li>
+                <li>Wenatchee Valley College - Prompt Engineering</li>
+                <li>Cloudinary - Technical Curriculum Development</li>
+                <li>Microsoft Teals - Volunteer</li>
+                <li>Seattle University - Web Development Certificate Instruction</li>
+                <li>Codefellows - Bootcamp Instruction</li>
+                <li>City University of Seattle - Web Development Instruction</li>
+                <li>North Seattle College - Programming Instruction</li>
+            </ul>
 
+            <h3>Software Development Experience</h3>
+            <ul>
                 <li>HDR Inc</li>
                 <li>Schweitzer Engineering Labs</li>
                 <li>Globys</li>
                 <li>f5 Networks</li>
                 <li>Seattle Children's Hospital</li>
-                <li>Seattle Public Schools Contractor</li>
+                <li>Seattle Public Schools - Contractor</li>
                 <li>Expeditors International</li>
                 <li>go2net.com</li>
                 <li>fine.com</li>
                 <li>Recreational Equipment Incorporated (REI)</li>
                 <li>Boeing Company</li>
-            </div>
+                <p><a href="https://www.linkedin.com/in/rebeccapeltz/" target="_blank">More on LinkedIn...</a>
+                <p>
+            </ul>
         </section>
-        <section class="section lists">
-            <h2>Skills</h2>
-            <div class="section-content">
-                <section class="subsection">
-                    <h3>Languages</h3>
-                    <div class="subsection-content">
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>TypeScript</li>
-                            <li>Node.js</li>
-                            <li>Java</li>
-                            <li>C#</li>
-                            <li>HTML/CSS</li>
-                            <li>SQL</li>
-                            <li>R</li>
-                            <li>Python</li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="subsection">
-                    <h3>Frameworks</h3>
-                    <div class="subsection-content">
-                        <ul>
-                            <li>React</li>
-                            <li>.Net</li>
-                            <li>Next.js</li>
-                            <li>Vue.js</li>
-                            <li>Ionic</li>
-                            <li>Flask</li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="subsection">
-                    <h3>Tools for Education</h3>
-                    <div class="subsection-content">
-                        <ul>
-                            <li>Gitbook</li>
-                            <li>Descript</li>
-                            <li>Camtasia</li>
-                            <li>Canvas</li>
-                            <li>Grammarly</li>
-                            <li>GitHub Pages</li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-        </section>
-           <section class="section cards">
-            <h2>Certification</h2>
-              <div class="section-content">
-                <section class="subsection">
-                    <h3>Cloud</h3>
-                    <div class="subsection-content">
-                        <ul>
-                            <li>AWD Cloud Practioner 2025</li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="subsection">
-                    <h3>Video Editing</h3>
-                    <div class="subsection-content">
-                        <ul>
-                            <li>Camtasia 2025</li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="subsection">
-                    <h3>Cyber Security</h3>
-                    <div class="subsection-content">
-                        <ul>
-                            <li>ISC2 Certified in Cybersecurity 2025</li>
-                        </ul>
-                    </div>
-                </section>
-                </div>
-            </section> 
-        <section class="section cards">
-            <h2>Communication</h2>
-            <div class="section-content">
-                <section class="subsection">
-                    <h3>Sharing</h3>
-                    <div class="subsection-content">
-                        <dl>
-                            <div class="card">
-                                <dt><a href="  https://rpeltz.gitbook.io/portfolio" rel="external"
-                                        target="_blank">Portfolio</a></dt>
-                                <dd>I created a Portfolio using Gitbook.
-                                </dd>
-                            </div>
-                            <div class="card">
-                                <dt> <a href="https://chromewebstore.google.com/detail/link-reveal/fmmmcdmfaadidngnfnidhlmpgigmnhjh"
-                                        target="_blank">Link Reveal Chrome Extension</a></dt>
-                                <dd>Phishing seems to be a big problem for the everyday user so I created a
-                                    Chrome
-                                    extension that could help view all the links with a color coded rating.
-                                    Here's code
-                                    for the chrome extension: <a href="https://github.com/rebeccapeltz/link-reveal-ext"
-                                        target="_blank">link-reveal-ext</a>
-                                </dd>
-                            </div>
-                            <div class="card">
-                                <dt><a href="https://dev.to/rebeccapeltz/using-web-apis-to-create-a-camera-application-oip"
-                                        rel="external" target="_blank">Using Web APIs to Create a Camera
-                                        Application</a>
-                                </dt>
-                                <dd>This is a how-to article that describes how you can create a camera
-                                    application that
-                                    runs on a web page. It explores the use of Web APIs like canvas, Media
-                                    Capture and
-                                    Streams, Web Share, and Permissions.</dd>
-                            </div>
-                            <div class="card">
-                                <dt><a href="https://dev.to/rebeccapeltz/recipe-generator-25c5" rel="external"
-                                        target="_blank">Recipe Generator Using AI from Cloudflare</a></dt>
-                                <dd>I created this recipe as part of a Cloudflare challenge on dev.to. It was my
-                                    first
-                                    experience using an AI API.
-                                </dd>
-                            </div>
 
-                        </dl>
-                    </div>
-                </section>
-                <section class="subsection">
-                    <h3>Speaking</h3>
-                    <div class="subsection-content">
-                        <dl>
-                            <div class="card">
-                                <dt><a href="https://2022.cascadiajs.com/" rel="external">Cascadia JS</a></dt>
-                                <dd>Learning and Managing Code with Code Notebooks: This session described how
-                                    you can
-                                    create code notebooks in multiple languages using Visual Studio Code. </dd>
-                            </div>
-                        </dl>
-                    </div>
-                </section>
-                <section class="subsection">
-                    <h3>NPM Packages</h3>
-                    <div class="subsection-content">
-                        <dl>
-                            <div class="card">
-                                <dt><a href="https://www.npmjs.com/package/@rebeccapeltz/fun-run"
-                                        rel="external">@rebeccapeltz/fun-run</a></dt>
-                                <dd>This is a function runner that includes code to get the amount of time in
-                                    milliseconds that it takes to run the function. It's good for collecting
-                                    statistics
-                                    on how long it takes to run a function. Here's the code for <a
-                                        href="https://github.com/rebeccapeltz/fun-run" target="_blank">fun-run
-                                        code.</a>
-                                </dd>
-                            </div>
-                            <div class="card">
-                                <dt><a href="https://www.npmjs.com/package/colorbydegree" rel="external">Color
-                                        by
-                                        Degree</a></dt>
-                                <dd>Enable the ability to estimate a color by using a degree on a color wheel
-                                    and get
-                                    back HSL, RGB, or Hex.</dd>
-                            </div>
-                        </dl>
-                    </div>
-                </section>
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>Node.js</li>
+                        <li>Java</li>
+                        <li>C#</li>
+                        <li>HTML/CSS</li>
+                        <li>SQL</li>
+                        <li>R</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>.Net</li>
+                        <li>Next.js</li>
+                        <li>Vue.js</li>
+                        <li>Ionic</li>
+                        <li>Flask</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools for Education</h3>
+                    <ul>
+                        <li>Gitbook</li>
+                        <li>Descript</li>
+                        <li>Camtasia</li>
+                        <li>Canvas</li>
+                        <li>GitHub Pages</li>
+                        <li>Claude.ai</li>
+                    </ul>
+                </div>
             </div>
         </section>
-        <section class="section text">
-            <h2>Current</h2>
-            <div class="section-content">
-                <section class="subsection">
-                    <h3>Role</h3>
-                    <div class="subsection-content">
-                        <p>Instructor Part Time, Python at <a href="https://www.pce.uw.edu/certificates/python-programming" rel="external noreferrer"
-                                target="_blank">UW Continiuing Education</a></p>
-                    </div>
-                </section>
-                <section class="subsection">
-                    <h3>Time Zone</h3>
-                    <div class="subsection-content">
-                        <p>Pacific Standard Time (<abbr class="normal">GMT</abbr>-8)</p>
-                    </div>
-                </section>
-                <section class="subsection">
-                    <h3>Elsewhere</h3>
-                    <div class="subsection-content">
-                        <p><a href="https://github.com/rebeccapeltz" rel="external noreferrer">GitHub</a>,
-                            <a href="https://www.linkedin.com/in/rebeccapeltz/" rel="external noreferrer">LinkedIn</a>
-                            <a href="https://rpeltz.gitbook.io/portfolio" rel="external noreferrer">GitBook</a>
-                        </p>
-                    </div>
-                </section>
-                <section class="subsection">
-                    <h3>Contact</h3>
-                    <div class="subsection-content">
-                        <p><a href="mailto:rebeccapeltz@gmail.com">Email</a></p>
-                    </div>
-                </section>
-            </div>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>AWS Cloud Practitioner - 2028</li>
+                <li>Certified in Cyber Security - 2027</li>
+                <li>Camtasia - 2025</li>
+                <p><a href="https://www.linkedin.com/in/rebeccapeltz/details/certifications/" target="_blank">More on
+                        LinkedIn...</a></p>
+            </ul>
         </section>
-        <footer>
-            <div>
-                <p>© 2025</p>
-                <!-- <p><cite>The unexamined life is not worth living. -Socrates</cite></p> -->
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Demonstrate using GitBook to create<a href="https://rpeltz.gitbook.io/portfolio"
+                    target="_black">Portfolio</a>to showcase
+                work and projects.</p>
+
+            <h3>Link Reveal Chrome Extension</h3>
+            <p>Phishing is a big problem for everyday users,
+                so I created a Chrome extension, <a
+                    href="https://chromewebstore.google.com/detail/link-reveal/fmmmcdmfaadidngnfnidhlmpgigmnhjh"
+                    target="_blank">Link Reveal</a>
+                to help view all links with color-coded ratings. The extension enhances online security by making link
+                destinations transparent
+                before clicking.</p>
+        </section>
+
+        <section id="current">
+            <h2>Current Employment</h2>
+            <p><strong>Instructional Assistant (Part Time)</strong> - <a
+                    href="https://www.pce.uw.edu/certificates/python-programming" target="_blank">Python Programming at
+                    UW Continuing Education</a></p>
+            <p><strong>AI Instruction (Part Time)</strong> - Teaching Artificial Intelligence for community and local
+                business through <a href="https://www.skagit.edu/continuing-community-education/" target="_blank">Skagit
+                    Valley College Continuing and Community Education</a></p>
+            <p><strong>Time Zone:</strong> Pacific Standard Time (GMT-8)</p>
+        </section>
+
+        <div class="contact-info">
+            <h2>Contact & Links</h2>
+            <div class="links">
+                <a href="https://github.com/rebeccapeltz" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/rebeccapeltz" target="_blank">LinkedIn</a> |
+                <a href="https://rpeltz.gitbook.io/portfolio" target="_blank">GitBook Portfolio</a> |
+                <a href="https://github.com/rebeccapeltz/link-reveal-ext" target="_blank">Link Reveal Extension</a>
             </div>
-        </footer>
-    </main>
+            <p style="margin-top: 15px;">Email: <a href="mailto:rebeccapeltz@gmail.com">rebeccapeltz@gmail.com</a></p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Becky Peltz</p>
+        </div>
+    </div>
 </body>
 
 </html>
